@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>Challenge: Change a WebPage Color</title>
+<style>
+body {
+background-color:rgb(255, 255, 255)
+}
+</style>
+</head>
+<body>
+<h1>Welcome to web portal</h1>
+<div id="info">Information Page</div>
+<button id="newInfo">New Information</button>
+<script>
+const newInfo = document.getElementById('newInfo');
+
+newInfo.addEventListener('click', function onClick(event) {
+  // changing background color
+  document.body.style.backgroundColor = 'blue';
+});
+</script>
+</body>
+</html>
